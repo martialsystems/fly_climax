@@ -6,7 +6,7 @@ Working set is FOUR `INXXX149` bodyIds 800571, 800986, 802096, 904047. Sensitivi
 
 Do not claim a locked Crz identity. Locked README row: Orgasm simulated? No. Do not write a climax result for the fly. The 40 Hz bar is invented. 0.01 mV per contact is a grid pick because 0.005 left AbNT silent. Consensus 5-HT on AbNT is missing.
 
-Do not run another ejaculation threshold. The remaining wiring hole is MANC type and Maggio/Chaverra SGN vs OGN morphology for the 13 unlabeled AbNT cells, only if asked.
+Do not run another ejaculation threshold. Do not restamp hop tables. The 13 unlabeled AbNT cells are unknown vs Maggio/Chaverra: consensus serotonin absent. EN00B010 is OGN-like by OA consensus plus type. Organ target after AbNT is not in the annotations.
 
 README quotes `logs/`. Do not restamp hop totals from a different weights table. This tree uses significant-only. fly_chess locks the full weights feather, a different object.
 

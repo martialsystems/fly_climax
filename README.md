@@ -97,6 +97,32 @@ NT is not OA. Consensus is unclear. The public feather has a single predicted-NT
 | 802978 | 118 | unclear | unclear | 0.888 |
 | 810859 | 64 | unclear | unclear | 0.282 |
 
+## Unlabeled AbNT vs Maggio/Chaverra
+
+`logs/unlabeled_abnt.json`. Annotations and NT only. Hop tables not rebuilt. Chaverra et al. eLife 14:RP108225 define SGN as 5-HT+Glu (accessory-gland biased) and OGN as OA+Glu (ejaculatory-duct biased). That paper does not publish MaleCNS or MANC body IDs. Consensus serotonin on AbNT is 0. Axon after AbNT (accessory gland vs seminal vesicle vs ejaculatory duct vs body wall) is not in the annotation table.
+
+| bodyId | type | superclass | exitNerve | soma | pred / consensus NT | MANC | axon after AbNT | Maggio class | grade |
+|-------:|------|------------|-----------|------|---------------------|------|-----------------|--------------|-------|
+| 808163 | EN00B010 | vnc_efferent | AbNT | A10 M | unclear 0.654 / octopamine | 168470 EN00B010 | no organ target in annotations | OGN-like | morphological guess |
+| 809974 | EN00B010 | vnc_efferent | AbNT | A10 M | unclear 0.488 / octopamine | 11765 EN00B010 | no organ target in annotations | OGN-like | morphological guess |
+| 907835 | EN00B010 | vnc_efferent | AbNT | A10 M | unclear 0.768 / octopamine | 11092 EN00B010 | no organ target in annotations | OGN-like | morphological guess |
+| 804275 | EN00B010 | vnc_efferent | AbNT | A10 M | unclear 0.905 / octopamine | 11453 EN00B010 | no organ target in annotations | OGN-like | morphological guess |
+| 814470 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.220 / unclear | 23324, no mancType | no organ target in annotations | unknown | no data |
+| 936838 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.919 / unclear | unmapped | no organ target in annotations | unknown | no data |
+| 815445 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.732 / unclear | 28535, no mancType | no organ target in annotations | unknown | no data |
+| 808454 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.975 / unclear | 15736, no mancType | no organ target in annotations | unknown | no data |
+| 816976 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.593 / unclear | 17776, no mancType | no organ target in annotations | unknown | no data |
+| 818737 | unlabeled | vnc_efferent | AbNT | A8 M 00B | unclear 0.651 / unclear | 16791, no mancType | no organ target in annotations | unknown | no data |
+| 800930 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.488 / unclear | 13826, no mancType | no organ target in annotations | unknown | no data |
+| 808456 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.593 / unclear | 11334, no mancType | no organ target in annotations | unknown | no data |
+| 909643 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.423 / unclear | 13576, no mancType | no organ target in annotations | unknown | no data |
+| 808457 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.900 / unclear | 21104, no mancType | no organ target in annotations | unknown | no data |
+| 911713 | unlabeled | vnc_efferent | AbNT | A10 M 00B | unclear 0.521 / unclear | 11469, no mancType | no organ target in annotations | unknown | no data |
+| 802978 | unlabeled | vnc_efferent | AbNT | A8 M 00B | unclear 0.888 / unclear | 11296, no mancType | no organ target in annotations | unknown | no data |
+| 810859 | unlabeled | vnc_efferent | AbNT | A9 R | unclear 0.282 / unclear | 11972, no mancType | no organ target in annotations | unknown | no data |
+
+EN00B010 controls come out OGN-like: typed EN00B010, consensus octopamine, AbNT. The 13 have no type, no mancType, consensus NT unclear, consensus serotonin absent. The Tayler SGN step is not in these 13 as identified 5-HT. Only the OGN duct-shaped OA EN00B path is in the graph.
+
 ### MNad* (hop1 >= 10; 60 posts in `logs/hop1.json`)
 
 | bodyId | type | exitNerve | hop1 | consensus NT |
@@ -194,6 +220,7 @@ Optional rebuild from Janelia feathers (pandas, pyarrow):
 | `logs/hop1_top20.json` | LIF partners |
 | `logs/lif_toy.json` | toy pulse lock |
 | `logs/working_set.json` | FOUR plus sensitivity |
+| `logs/unlabeled_abnt.json` | 13 unlabeled AbNT plus EN00B010 Maggio/Chaverra map |
 | `src/fly_climax/lif_toy.py` | LIF |
 | `data-provenance/malecns_v1/source.lock.json` | GCS sha256 |
 | `AGENTS.md` | claim bans, no GraphForge |
