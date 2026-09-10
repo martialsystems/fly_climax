@@ -1,0 +1,16 @@
+{
+  "runtime_checks": [
+    {
+      "id": "unit-tests",
+      "argv": [".venv/bin/python", "-m", "pytest", "tests/", "-q"],
+      "timeout_s": 120,
+      "paths": ["src/**", "tests/**", "logs/**", "README.md", "vbd.runtime.json", "pyproject.toml"]
+    },
+    {
+      "id": "lif-smoke",
+      "argv": [".venv/bin/python", "-m", "fly_abgcrz", "lif"],
+      "timeout_s": 60,
+      "paths": ["src/**", "logs/**"]
+    }
+  ]
+}

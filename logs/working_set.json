@@ -1,0 +1,95 @@
+{
+  "dataset": "male-cns:v1.0",
+  "neuprint_uuid": "4b2087c0fbe046bfaf0d60bc970e3e5d",
+  "four": [
+    800571,
+    800986,
+    802096,
+    904047
+  ],
+  "type": "INXXX149",
+  "sensitivity": [
+    801013,
+    800166
+  ],
+  "identity": "candidate",
+  "cells": [
+    {
+      "bodyId": 800571,
+      "set": "four",
+      "type": "INXXX149",
+      "instance": "INXXX149_R",
+      "somaSide": "R",
+      "somaNeuromere": "A8",
+      "mancBodyid": 16132,
+      "consensus_nt": "acetylcholine",
+      "predicted_nt": "acetylcholine",
+      "predicted_nt_confidence": 0.8673051044062828
+    },
+    {
+      "bodyId": 800986,
+      "set": "four",
+      "type": "INXXX149",
+      "instance": "INXXX149_L",
+      "somaSide": "L",
+      "somaNeuromere": "A9",
+      "mancBodyid": 14161,
+      "consensus_nt": "acetylcholine",
+      "predicted_nt": "acetylcholine",
+      "predicted_nt_confidence": 0.8556246635616424
+    },
+    {
+      "bodyId": 802096,
+      "set": "four",
+      "type": "INXXX149",
+      "instance": "INXXX149_R",
+      "somaSide": "R",
+      "somaNeuromere": "A7",
+      "mancBodyid": 14938,
+      "consensus_nt": "acetylcholine",
+      "predicted_nt": "acetylcholine",
+      "predicted_nt_confidence": 0.9296463602186688
+    },
+    {
+      "bodyId": 904047,
+      "set": "four",
+      "type": "INXXX149",
+      "instance": "INXXX149_L",
+      "somaSide": "L",
+      "somaNeuromere": "A8",
+      "mancBodyid": 13190,
+      "consensus_nt": "acetylcholine",
+      "predicted_nt": "acetylcholine",
+      "predicted_nt_confidence": 0.8384668410978952
+    },
+    {
+      "bodyId": 801013,
+      "set": "sensitivity",
+      "type": "INXXX149",
+      "instance": "INXXX149_L",
+      "somaSide": "L",
+      "somaNeuromere": "A7",
+      "mancBodyid": 16802,
+      "consensus_nt": "acetylcholine",
+      "predicted_nt": "acetylcholine",
+      "predicted_nt_confidence": 0.9350912993489964
+    },
+    {
+      "bodyId": 800166,
+      "set": "sensitivity",
+      "type": "INXXX149",
+      "instance": "INXXX149_R",
+      "somaSide": "R",
+      "somaNeuromere": "A9",
+      "mancBodyid": 16597,
+      "consensus_nt": "acetylcholine",
+      "predicted_nt": "acetylcholine",
+      "predicted_nt_confidence": 0.9000782489050855
+    }
+  ],
+  "do_not_search": [
+    "CRZ01",
+    "CRZ02"
+  ],
+  "do_not_search_note": "Those are brain cells. Cell ID is closed on INXXX149."
+}

@@ -1,0 +1,93 @@
+{
+  "dataset": "male-cns:v1.0",
+  "weights": "significant-only",
+  "command": [
+    800571,
+    800986,
+    802096,
+    904047
+  ],
+  "type": "INXXX149",
+  "sensitivity": [
+    801013,
+    800166
+  ],
+  "identity": "candidate",
+  "hop1": {
+    "n_edges": 1039,
+    "n_posts": 457,
+    "total_weight": 24234,
+    "weight_ge5": 23291,
+    "n_posts_ge5": 262,
+    "reciprocal_four": 1834,
+    "signed_excitatory": 13450,
+    "signed_inhibitory": 3055,
+    "unsigned": 7729,
+    "abnt_efferent_weight": 6891,
+    "abnt_efferent_n": 34,
+    "abnt_motor_weight": 885,
+    "abnt_motor_n": 33,
+    "abnt_efferent_or_motor_weight": 7776,
+    "abnt_efferent_or_motor_n": 67,
+    "vnc_efferent_or_motor_weight": 8132,
+    "vnc_efferent_or_motor_n": 96,
+    "local_ag_a7a9_intrinsic_weight": 11596,
+    "local_ag_a7a9_intrinsic_n": 156,
+    "vnc_intrinsic_weight": 14880,
+    "frac_local_ag_a7a9": 0.47850127919452007,
+    "frac_vnc_intrinsic": 0.614013369645952,
+    "frac_exiting_effectors": 0.3355616076586614,
+    "frac_abnt_effectors": 0.3208715028472394,
+    "ogn_like_weight": 3327,
+    "ogn_like_n": 21,
+    "en00b010_weight": 1636,
+    "sgn_like_hole_weight": 3564,
+    "sgn_like_hole_n": 13,
+    "en00b_weight": 3327,
+    "unlabeled_abnt_efferent_weight": 3564,
+    "mnad_weight": 1233,
+    "mnad_abnt_weight": 885
+  },
+  "hop2": {
+    "n_posts": 11675,
+    "total_weight": 850051,
+    "abnt_efferent_or_motor_weight": 154333,
+    "abnt_efferent_or_motor_n": 104,
+    "local_ag_a7a9_intrinsic_weight": 191411,
+    "vnc_intrinsic_weight": 457400,
+    "vnc_efferent_or_motor_weight": 247903,
+    "frac_local_ag_a7a9": 0.22517590121063324,
+    "frac_exiting_effectors": 0.2916330902498791,
+    "frac_abnt_effectors": 0.18155734185360642
+  },
+  "serotonin": {
+    "consensus_n": 48,
+    "consensus_abnt_n": 0,
+    "consensus_vnc_efferent_or_motor_n": 0,
+    "predicted_abnt": [
+      {
+        "bodyId": 806679,
+        "type": "MNad12",
+        "superclass": "vnc_motor",
+        "exitNerve": "AbNT",
+        "predicted_nt": "serotonin",
+        "predicted_nt_confidence": 0.5199954212454213,
+        "consensus_nt": "unclear",
+        "hop1_weight": 0
+      }
+    ],
+    "accessory_gland_step": "missing"
+  },
+  "nt_sign": {
+    "excitatory": [
+      "acetylcholine",
+      "glutamate",
+      "octopamine",
+      "serotonin"
+    ],
+    "inhibitory": [
+      "gaba"
+    ],
+    "unsigned": "unclear and any NT not in those two sets"
+  }
+}

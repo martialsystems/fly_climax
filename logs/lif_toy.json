@@ -1,0 +1,182 @@
+{
+  "command": [
+    800571,
+    800986,
+    802096,
+    904047
+  ],
+  "clamp_hz": 100.0,
+  "pulse_s": 3.0,
+  "n_partners": 20,
+  "n_abnt_effectors": 13,
+  "mV_per_contact": 0.01,
+  "gain_note": "0.01 mV per contact is a grid pick because 0.005 left AbNT silent, not a fly biophysics constant.",
+  "threshold_hz": 40.0,
+  "threshold_note": "The ejaculation threshold is invented and is not biology.",
+  "abnt_mean_hz": 26.97435897435898,
+  "abnt_max_hz": 50.0,
+  "crossed": false,
+  "rates": [
+    {
+      "bodyId": 800439,
+      "type": "INXXX137",
+      "hop1_weight": 888,
+      "abnt_effector": false,
+      "spikes": 300,
+      "hz": 100.0
+    },
+    {
+      "bodyId": 805280,
+      "type": "INXXX293",
+      "hop1_weight": 540,
+      "abnt_effector": false,
+      "spikes": 150,
+      "hz": 50.0
+    },
+    {
+      "bodyId": 902844,
+      "type": "INXXX197",
+      "hop1_weight": 528,
+      "abnt_effector": false,
+      "spikes": 150,
+      "hz": 50.0
+    },
+    {
+      "bodyId": 808163,
+      "type": "EN00B010",
+      "hop1_weight": 478,
+      "abnt_effector": true,
+      "spikes": 150,
+      "hz": 50.0
+    },
+    {
+      "bodyId": 801013,
+      "type": "INXXX149",
+      "hop1_weight": 455,
+      "abnt_effector": false,
+      "spikes": 150,
+      "hz": 50.0
+    },
+    {
+      "bodyId": 820520,
+      "type": "INXXX293",
+      "hop1_weight": 442,
+      "abnt_effector": false,
+      "spikes": 150,
+      "hz": 50.0
+    },
+    {
+      "bodyId": 809974,
+      "type": "EN00B010",
+      "hop1_weight": 409,
+      "abnt_effector": true,
+      "spikes": 100,
+      "hz": 33.333333333333336
+    },
+    {
+      "bodyId": 907835,
+      "type": "EN00B010",
+      "hop1_weight": 396,
+      "abnt_effector": true,
+      "spikes": 100,
+      "hz": 33.333333333333336
+    },
+    {
+      "bodyId": 814470,
+      "type": null,
+      "hop1_weight": 380,
+      "abnt_effector": true,
+      "spikes": 100,
+      "hz": 33.333333333333336
+    },
+    {
+      "bodyId": 903021,
+      "type": "INXXX197",
+      "hop1_weight": 378,
+      "abnt_effector": false,
+      "spikes": 100,
+      "hz": 33.333333333333336
+    },
+    {
+      "bodyId": 936838,
+      "type": null,
+      "hop1_weight": 378,
+      "abnt_effector": true,
+      "spikes": 100,
+      "hz": 33.333333333333336
+    },
+    {
+      "bodyId": 804275,
+      "type": "EN00B010",
+      "hop1_weight": 353,
+      "abnt_effector": true,
+      "spikes": 75,
+      "hz": 25.0
+    },
+    {
+      "bodyId": 815445,
+      "type": null,
+      "hop1_weight": 339,
+      "abnt_effector": true,
+      "spikes": 75,
+      "hz": 25.0
+    },
+    {
+      "bodyId": 808454,
+      "type": null,
+      "hop1_weight": 331,
+      "abnt_effector": true,
+      "spikes": 75,
+      "hz": 25.0
+    },
+    {
+      "bodyId": 816976,
+      "type": null,
+      "hop1_weight": 324,
+      "abnt_effector": true,
+      "spikes": 75,
+      "hz": 25.0
+    },
+    {
+      "bodyId": 808856,
+      "type": "EN00B004",
+      "hop1_weight": 306,
+      "abnt_effector": true,
+      "spikes": 60,
+      "hz": 20.0
+    },
+    {
+      "bodyId": 801369,
+      "type": "INXXX137",
+      "hop1_weight": 305,
+      "abnt_effector": false,
+      "spikes": 60,
+      "hz": 20.0
+    },
+    {
+      "bodyId": 818737,
+      "type": null,
+      "hop1_weight": 296,
+      "abnt_effector": true,
+      "spikes": 50,
+      "hz": 16.666666666666668
+    },
+    {
+      "bodyId": 803005,
+      "type": "EN00B004",
+      "hop1_weight": 295,
+      "abnt_effector": true,
+      "spikes": 50,
+      "hz": 16.666666666666668
+    },
+    {
+      "bodyId": 800930,
+      "type": null,
+      "hop1_weight": 291,
+      "abnt_effector": true,
+      "spikes": 42,
+      "hz": 14.0
+    }
+  ],
+  "print_line": "AbNT effector mean 26.974 Hz does not cross invented threshold 40 Hz."
+}
