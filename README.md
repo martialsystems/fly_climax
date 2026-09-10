@@ -226,4 +226,4 @@ Optional rebuild from Janelia feathers (pandas, pyarrow):
 | `AGENTS.md` | claim bans, no GraphForge |
 | `THIRD_PARTY.md` | MaleCNS CC BY 4.0 |
 
-Fly research index: https://gist.github.com/martialsystems/12835f747d6360781f3cc7f91f243178
+[Fly research index](https://gist.github.com/martialsystems/12835f747d6360781f3cc7f91f243178)

@@ -59,7 +59,7 @@ def test_readme_quotes_locks() -> None:
     assert "\u2014" not in text
     assert scan_text(text) == []
     assert "orgasmed" not in text.lower()
-    footer = f"Fly research index: {FLY_INDEX_GIST}"
+    footer = f"[Fly research index]({FLY_INDEX_GIST})"
     assert footer in text
     assert FLY_INDEX_ID in text
     assert FLY_INDEX_ID != "REPLACE_FLY_INDEX"
