@@ -16,11 +16,10 @@ SENSITIVITY = (801013, 800166)
 TYPE = "INXXX149"
 IDENTITY = "candidate"
 
-# Filled after gist create. Tests lock this string.
 FLY_INDEX_GIST = "https://gist.github.com/martialsystems/12835f747d6360781f3cc7f91f243178"
 FLY_INDEX_ID = "12835f747d6360781f3cc7f91f243178"
 
 BANNER = (
-    "Candidate INXXX149 Gautham-4 hop-1/hop-2 on MaleCNS v1.0. "
-    "Toy LIF pulse. Invented threshold. 5-HT accessory-gland step missing."
+    "Public-connectome equivalent of the 2018 abdominal pulse. "
+    "Candidate INXXX149. Climax not simulated."
 )

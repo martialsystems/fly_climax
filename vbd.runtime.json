@@ -8,7 +8,7 @@
     },
     {
       "id": "lif-smoke",
-      "argv": [".venv/bin/python", "-m", "fly_abgcrz", "lif"],
+      "argv": [".venv/bin/python", "-m", "fly_climax", "lif"],
       "timeout_s": 60,
       "paths": ["src/**", "logs/**"]
     }

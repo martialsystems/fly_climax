@@ -4,9 +4,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from fly_abgcrz import FLY_INDEX_GIST, FLY_INDEX_ID, FOUR, QUESTION, SENSITIVITY
-from fly_abgcrz.claims import scan_text
-from fly_abgcrz.lif_toy import GAIN_NOTE, THRESHOLD_NOTE
+from fly_climax import FLY_INDEX_GIST, FLY_INDEX_ID, FOUR, QUESTION, SENSITIVITY
+from fly_climax.claims import scan_text
+from fly_climax.lif_toy import GAIN_NOTE, THRESHOLD_NOTE
 
 REPO = Path(__file__).resolve().parents[1]
 
@@ -17,7 +17,12 @@ def test_readme_quotes_locks() -> None:
     working = json.loads((REPO / "logs" / "working_set.json").read_text(encoding="utf-8"))
     hop1 = json.loads((REPO / "logs" / "hop1.json").read_text(encoding="utf-8"))
     lif = json.loads((REPO / "logs" / "lif_toy.json").read_text(encoding="utf-8"))
-    assert text.startswith("# fly_abgcrz\n\nCandidate")
+    assert text.startswith("# fly_climax\n")
+    assert "Climax is not simulated." in text
+    assert "| Orgasm simulated? | No |" in text
+    assert "| Did you find named abgCrz in MaleCNS? | No |" in text
+    assert "not typed Crz" in text
+    assert "Do not run another ejaculation threshold." in text
     assert QUESTION in text
     assert "24,234" in text
     assert "7,776" in text
@@ -53,7 +58,7 @@ def test_readme_quotes_locks() -> None:
     assert "What it is not" not in text
     assert "\u2014" not in text
     assert scan_text(text) == []
-    assert "orgasm" not in text.lower()
+    assert "orgasmed" not in text.lower()
     footer = f"Fly research index: {FLY_INDEX_GIST}"
     assert footer in text
     assert FLY_INDEX_ID in text

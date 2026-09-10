@@ -7,7 +7,7 @@ from typing import Any
 
 import numpy as np
 
-from fly_abgcrz.paths import LOGS
+from fly_climax.paths import LOGS
 
 THRESHOLD_NOTE = "The ejaculation threshold is invented and is not biology."
 GAIN_NOTE = (

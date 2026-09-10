@@ -1,6 +1,6 @@
 # Third-party materials
 
-Original `fly_abgcrz` code is MIT (see `LICENSE`). That license does not relicense research data.
+Original `fly_climax` code is MIT (see `LICENSE`). That license does not relicense research data.
 
 ## MaleCNS v1.0
 

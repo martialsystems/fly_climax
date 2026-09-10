@@ -9,7 +9,8 @@ from typing import Iterable
 
 BANNED: tuple[tuple[str, re.Pattern[str]], ...] = (
     ("orgasmed", re.compile(r"\borgasmed\b", re.I)),
-    ("orgasm", re.compile(r"\borgasm\b", re.I)),
+    ("orgasm_yes", re.compile(r"orgasm simulated\?\s*yes", re.I)),
+    ("the_fly_came", re.compile(r"the fly came\b", re.I)),
     ("fly_ejaculated", re.compile(r"the fly ejaculated", re.I)),
     ("crz01_as_abg", re.compile(r"CRZ01.{0,40}abgCrz|abgCrz.{0,40}CRZ01", re.I | re.S)),
     ("crz02_as_abg", re.compile(r"CRZ02.{0,40}abgCrz|abgCrz.{0,40}CRZ02", re.I | re.S)),

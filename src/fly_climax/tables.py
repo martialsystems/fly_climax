@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from typing import Any, Iterable
 
-from fly_abgcrz.paths import LOGS
+from fly_climax.paths import LOGS
 
 
 def _load(name: str) -> Any:

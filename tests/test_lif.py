@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from fly_abgcrz.lif_toy import (
+from fly_climax.lif_toy import (
     GAIN_NOTE,
     THRESHOLD_HZ,
     THRESHOLD_NOTE,
@@ -37,7 +37,7 @@ def test_toy_does_not_cross_invented_bar() -> None:
 
 
 def test_write_log_roundtrip(tmp_path: Path, monkeypatch) -> None:
-    import fly_abgcrz.lif_toy as lif_toy
+    import fly_climax.lif_toy as lif_toy
 
     result = run_toy()
     monkeypatch.setattr(lif_toy, "LOGS", tmp_path)

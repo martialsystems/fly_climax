@@ -7,14 +7,14 @@ from pathlib import Path
 
 import pytest
 
-from fly_abgcrz import BANNER
-from fly_abgcrz.claims import ClaimBanError, require_clean, scan_text
-from fly_abgcrz.cli import main
+from fly_climax import BANNER
+from fly_climax.claims import ClaimBanError, require_clean, scan_text
+from fly_climax.cli import main
 
 REPO = Path(__file__).resolve().parents[1]
 PLAIN_HOOK = (
-    "Candidate INXXX149 Gautham-4 hop-1/hop-2 on MaleCNS v1.0. "
-    "Toy LIF pulse. Invented threshold. 5-HT accessory-gland step missing."
+    "Public-connectome equivalent of the 2018 abdominal pulse. "
+    "Candidate INXXX149. Climax not simulated."
 )
 
 
@@ -41,6 +41,9 @@ def test_banned_tokens_fail() -> None:
     with pytest.raises(ClaimBanError):
         require_clean("the fly orgasmed", source="x")
     with pytest.raises(ClaimBanError):
+        require_clean("Orgasm simulated? Yes", source="x")
+    with pytest.raises(ClaimBanError):
         require_clean("the fly ejaculated today", source="x")
     with pytest.raises(ClaimBanError):
         require_clean("identity is locked on INXXX149", source="x")
+    require_clean("Orgasm simulated? No", source="locked-row")

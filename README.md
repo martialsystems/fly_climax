@@ -1,12 +1,24 @@
-# fly_abgcrz
+# fly_climax
 
-Candidate. Four MaleCNS `INXXX149` cells (Gautham core 4) driven as a one- and two-synapse CsChrimson equivalent on male-cns:v1.0.
+The public-connectome equivalent of Zer-Krispil et al. 2018, as far as MaleCNS v1.0 can go. Four `INXXX149` candidates clamped as CsChrimson. Identity is candidate. Climax is not simulated.
 
 **Question.** If the four MaleCNS INXXX149 cells (Gautham core 4) are clamped as a CsChrimson pulse, how much one- and two-synapse weight lands on AbNT effectors versus local AG interneurons, and does a toy LIF cross an invented ejaculation threshold?
 
-**Answer.** Hop-1 from FOUR: 24,234 synapses onto 457 posts. 11,596 (47.9%) stay in A7-A9 `vnc_intrinsic` cells. 8,132 (33.6%) hit `vnc_efferent` plus `vnc_motor`. 7,776 (32.1%) of the total is AbNT effectors. OGN-like OA AbNT / EN00B* take 3,327. The SGN-like hole is 13 unlabeled AbNT efferents, 3,564 synapses, consensus NT unclear. Consensus 5-HT on AbNT is 0. The toy LIF (top 20 hop-1 partners, 100 Hz clamp, 3 s) does not cross the invented 40 Hz bar. Identity is candidate. NeuronBridge / Crz-GAL4 still has to match these four bodies to abgCrz.
+**Answer.** Hop-1 from FOUR: 24,234 synapses onto 457 posts. 11,596 (47.9%) stay in A7-A9 `vnc_intrinsic` cells. 8,132 (33.6%) hit `vnc_efferent` plus `vnc_motor`. 7,776 (32.1%) of the total is AbNT effectors. Named exiting cells are almost all octopaminergic EN00B*: OGN-shaped, ejaculatory-duct side. OGN-like OA AbNT / EN00B* take 3,327. The SGN-like hole is 13 unlabeled AbNT efferents, 3,564 synapses, consensus NT unclear. Consensus 5-HT on AbNT is 0. Predicted transmitter on the four command cells is ACh, not corazonin. The toy LIF (top 20 hop-1 partners, 100 Hz clamp, 3 s) does not cross the invented 40 Hz bar. That bar is a sanity check that the graph is wired toward AbNT, not a biological result. NeuronBridge / Crz-GAL4 still has to match these four bodies to abgCrz.
 
-Copied from `logs/`. Weight is synapse count on the MaleCNS v1.0 significant-only table. Sign: ACh/Glu/OA/5HT excitatory, GABA inhibitory, unclear unsigned. FOUR are ACh, so hop-1 current is excitatory. Sensitivity bodies 801013 and 800166 are not in the drive sum.
+This circuit shape matches Gautham/Thornquist and the Tayler command-cell story at the level of posterior AG cells that dump about a third of their synapses onto trunk-nerve effectors. It does not lock peptide identity. `INXXX149` is not typed Crz.
+
+| Question | Answer |
+|----------|--------|
+| Did you find named abgCrz in MaleCNS? | No |
+| Best candidate? | INXXX149 four-cell core |
+| Does driving them hit reproductive-tract nerves? | Yes, ~32% hop-1 to AbNT |
+| OGN / duct path? | Present (EN00B010 and other OA EN00B*) |
+| SGN / accessory-gland 5-HT path? | Missing |
+| Locked Crz identity? | No. Need Crz-GAL4 or antibody against these body IDs |
+| Orgasm simulated? | No |
+
+Copied from `logs/`. Weight is synapse count on the MaleCNS v1.0 significant-only table. Sign: ACh/Glu/OA/5HT excitatory, GABA inhibitory, unclear unsigned. FOUR are ACh, so hop-1 current is excitatory. Sensitivity bodies 801013 and 800166 are not in the drive sum. The next experiment is wet: NeuronBridge / Crz-GAL4 MCFO against these four meshes, and transmitter ID on the 13 unlabeled AbNT cells. Do not run another ejaculation threshold.
 
 ## Working set
 
@@ -148,7 +160,7 @@ Hop-2 MNad* top: MNad68 802201 (5,462), MNad68 800478 (5,327), MNad66 802114 (5,
 
 ## Toy LIF
 
-`src/fly_abgcrz/lif_toy.py`, lock `logs/lif_toy.json`. Four command cells clamped at 100 Hz for 3 s. One-synapse hop onto the top 20 hop-1 partners excluding FOUR. 0.01 mV per contact is a grid pick because 0.005 left AbNT silent, not a fly biophysics constant. AbNT effector mean 26.974 Hz does not cross invented threshold 40 Hz. The ejaculation threshold is invented and is not biology.
+`src/fly_climax/lif_toy.py`, lock `logs/lif_toy.json`. Four command cells clamped at 100 Hz for 3 s. One-synapse hop onto the top 20 hop-1 partners excluding FOUR. 0.01 mV per contact is a grid pick because 0.005 left AbNT silent, not a fly biophysics constant. AbNT effector mean 26.974 Hz does not cross invented threshold 40 Hz. The ejaculation threshold is invented and is not biology. Change the threshold, the millivolts-per-contact, or the 100 Hz clamp and that sentence flips. Useful only as a check that the graph is wired toward AbNT cells.
 
 ## 5-HT accessory-gland step
 
@@ -160,8 +172,8 @@ Missing. Consensus serotonin is 48 bodies in MaleCNS v1.0, 0 on AbNT, 0 on `vnc_
 /opt/homebrew/bin/python3.12 -m venv .venv
 .venv/bin/python -m pip install -e ".[dev]"
 .venv/bin/python -m pytest
-.venv/bin/python -m fly_abgcrz tables
-.venv/bin/python -m fly_abgcrz lif
+.venv/bin/python -m fly_climax tables
+.venv/bin/python -m fly_climax lif
 ```
 
 Optional rebuild from Janelia feathers (pandas, pyarrow):
@@ -169,7 +181,7 @@ Optional rebuild from Janelia feathers (pandas, pyarrow):
 ```bash
 .venv/bin/python -m pip install -e ".[malecns]"
 .venv/bin/python scripts/rebuild_from_feathers.py --ann ANN --nt NT --weights WEIGHTS --out logs
-.venv/bin/python -m fly_abgcrz lif
+.venv/bin/python -m fly_climax lif
 ```
 
 ## Files
@@ -182,7 +194,7 @@ Optional rebuild from Janelia feathers (pandas, pyarrow):
 | `logs/hop1_top20.json` | LIF partners |
 | `logs/lif_toy.json` | toy pulse lock |
 | `logs/working_set.json` | FOUR plus sensitivity |
-| `src/fly_abgcrz/lif_toy.py` | LIF |
+| `src/fly_climax/lif_toy.py` | LIF |
 | `data-provenance/malecns_v1/source.lock.json` | GCS sha256 |
 | `AGENTS.md` | claim bans, no GraphForge |
 | `THIRD_PARTY.md` | MaleCNS CC BY 4.0 |

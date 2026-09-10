@@ -3,9 +3,9 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fly-abgcrz"
+name = "fly-climax"
 version = "0.1.0"
-description = "Candidate INXXX149 Gautham-4 hop-1/hop-2 on MaleCNS v1.0 plus a toy LIF pulse"
+description = "Public-connectome equivalent of the 2018 abdominal pulse. Candidate INXXX149. Climax not simulated."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
@@ -19,7 +19,7 @@ dev = ["pytest>=8.0"]
 malecns = ["pandas>=2.0", "pyarrow>=14"]
 
 [project.scripts]
-fly-abgcrz = "fly_abgcrz.cli:main"
+fly-climax = "fly_climax.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -4,8 +4,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from fly_abgcrz import FOUR, SENSITIVITY, TYPE
-from fly_abgcrz.claims import scan_log_claim_fields
+from fly_climax import FOUR, SENSITIVITY, TYPE
+from fly_climax.claims import scan_log_claim_fields
 
 REPO = Path(__file__).resolve().parents[1]
 LOGS = REPO / "logs"
